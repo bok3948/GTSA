@@ -23,6 +23,17 @@ This is a PyTorch official implementation of the paper [Self-Supervised Learning
 - mmsegmentation: v0.30.0
 - mmdetection: v2.28.1
 
+## Fine-tuning with pre-trained checkpoints
+
+The following table provides the pre-trained checkpoints used in the paper.
+
+| Model | Pretraining Data | Pretrain Epochs | Checkpoint |
+|-------|-----------------|----------------|------------|
+| GTSA(ours) | COCO train2017 | 100 | [Download](https://example.com/checkpoint_1) |
+| DINO| COCO train2017  | 100 | [Download](https://example.com/checkpoint_2) |
+
+
+
 
 
 
