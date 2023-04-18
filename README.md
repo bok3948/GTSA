@@ -24,35 +24,33 @@ This is a PyTorch official implementation of the paper [Self-Supervised Learning
 - mmdetection: v2.28.1
 
 ## Fine-tuning with pre-trained checkpoints
-
+____________________________________________________________________________________________
 The following table provides the pre-trained checkpoints used in the paper.
 
 | Model | Pretraining Data | Pretrain Epochs | Checkpoint |
 |-------|-----------------|----------------|------------|
 | GTSA(ours) | COCO train2017 | 100 | [Download](https://example.com/checkpoint_1) |
 | DINO| COCO train2017  | 100 | [Download](https://example.com/checkpoint_2) |
-
-\
-
-
+____________________________________________________________________________________________
+____________________________________________________________________________________________
 By fine-tuning these pre-trained models, classification tasks
 
 | Model | Pretraining Data | Pretrain Epochs | Fintuning Data |  Checkpoint |
 |-------|-----------------|----------------|----------------|------------|
 | GTSA(ours) | COCO train2017 | 100 | iNat19 | [Download](https://example.com/checkpoint_1) |
 | DINO| COCO train2017  | 100 | iNat19 |  [Download](https://example.com/checkpoint_2) |
+____________________________________________________________________________________________
 
-\
-
+____________________________________________________________________________________________
 By fine-tuning these pre-trained models, Detection & Instace Segmentation tasks
 
 | Model | Pretraining Data | Pretrain Epochs | Fintuning Data |  Checkpoint |
 |-------|-----------------|----------------|----------------|------------|
 | GTSA(ours) | COCO train2017 | 100 | COCO2017 | [Download](https://example.com/checkpoint_1) |
 | DINO| COCO train2017  | 100 | COCO2017 |  [Download](https://example.com/checkpoint_2) |
+____________________________________________________________________________________________
 
-
-\
+____________________________________________________________________________________________
 
 By fine-tuning these pre-trained models, Semantic Segmentation tasks
 
@@ -60,7 +58,7 @@ By fine-tuning these pre-trained models, Semantic Segmentation tasks
 |-------|-----------------|----------------|----------------|------------|
 | GTSA(ours) | COCO train2017 | 100 | ADE20K | [Download](https://example.com/checkpoint_1) |
 | DINO| COCO train2017  | 100 | ADE20K |  [Download](https://example.com/checkpoint_2) |
-
+____________________________________________________________________________________________
 
 
 
