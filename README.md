@@ -35,7 +35,7 @@ The following table provides the pre-trained checkpoints used in the paper.
 
 | Model | Pretraining Data | Pretrain Epochs | Checkpoint |
 |-------|-----------------|----------------|------------|
-| GTSA(ours) | COCO train2017 | 100 | [Download](https://www.icloud.com/iclouddrive/02eeSfG1NJmlHB7dzkU6gRZlQ#GTSA) |
+| GTSA(ours) | COCO train2017 | 100 | [Download](https://drive.google.com/file/d/1Cjwl2dp5wNiUFeyPQAw8K8FtVVXyjDB8/view?usp=sharing) |
 | DINO| COCO train2017  | 100 | [Download](https://example.com/checkpoint_2) |
 ____________________________________________________________________________________________
 ____________________________________________________________________________________________
