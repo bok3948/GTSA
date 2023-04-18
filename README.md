@@ -20,6 +20,7 @@ This is a PyTorch official implementation of the paper [Self-Supervised Learning
 - PyTorch: 1.13.1
 - CUDA: 11.6
 - timm: 0.6.13
+- kornia: 0.6.11
 - mmsegmentation: v0.30.0
 - mmdetection: v2.28.1
 
