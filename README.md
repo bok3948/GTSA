@@ -52,7 +52,7 @@ By fine-tuning these pre-trained models, Detection & Instace Segmentation tasks
 | DINO| COCO train2017  | 100 | COCO2017 |  [Download](https://example.com/checkpoint_2) |
 
 
-
+\\
 
 By fine-tuning these pre-trained models, Semantic Segmentation tasks
 
