@@ -3,7 +3,8 @@
 This is a PyTorch official implementation of the paper [Self-Supervised Learning from Non-Object Centric Images with a Geometric Transformation Sensitive Architecture](http://arxiv.org/abs/2304.08014):
 
 
-<img src="https://imgur.com/a/INtkggr" alt="Alt text">
+![Example Image](/images/GTSA.png "Example Image Title")
+
 
 
 <pre>
