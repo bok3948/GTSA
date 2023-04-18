@@ -2,6 +2,11 @@
 
 This is a PyTorch official implementation of the paper [Self-Supervised Learning from Non-Object Centric Images with a Geometric Transformation Sensitive Architecture](http://arxiv.org/abs/2304.08014):
 
+
+[GTSA.png](https://www.icloud.com/iclouddrive/02eeSfG1NJmlHB7dzkU6gRZlQ#GTSA)
+
+
+
 <pre>
 
 @misc{lee2023selfsupervised,
