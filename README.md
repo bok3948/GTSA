@@ -33,6 +33,26 @@ The following table provides the pre-trained checkpoints used in the paper.
 | DINO| COCO train2017  | 100 | [Download](https://example.com/checkpoint_2) |
 
 
+By fine-tuning these pre-trained models, classification tasks
+
+| Model | Pretraining Data | Pretrain Epochs | Fintuning Data |  Checkpoint |
+|-------|-----------------|----------------|------------|
+| GTSA(ours) | COCO train2017 | 100 | iNat19 | [Download](https://example.com/checkpoint_1) |
+| DINO| COCO train2017  | 100 | iNat19 |  [Download](https://example.com/checkpoint_2) |
+
+By fine-tuning these pre-trained models, Detection & Instace Segmentation tasks
+
+| Model | Pretraining Data | Pretrain Epochs | Fintuning Data |  Checkpoint |
+|-------|-----------------|----------------|------------|
+| GTSA(ours) | COCO train2017 | 100 | COCO2017 | [Download](https://example.com/checkpoint_1) |
+| DINO| COCO train2017  | 100 | COCO2017 |  [Download](https://example.com/checkpoint_2) |
+
+By fine-tuning these pre-trained models, Semantic Segmentation tasks
+
+| Model | Pretraining Data | Pretrain Epochs | Fintuning Data |  Checkpoint |
+|-------|-----------------|----------------|------------|
+| GTSA(ours) | COCO train2017 | 100 | ADE20K | [Download](https://example.com/checkpoint_1) |
+| DINO| COCO train2017  | 100 | ADE20K |  [Download](https://example.com/checkpoint_2) |
 
 
 
