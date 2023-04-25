@@ -29,10 +29,19 @@ This is a PyTorch official implementation of the paper [Self-Supervised Learning
 - mmsegmentation: v0.30.0
 - mmdetection: v2.28.1
 
-## Fine-tuning with pre-trained checkpoints
+## Pre-Training GTSA with Non-Object Centric Images
 ____________________________________________________________________________________________
-The following table provides the pre-trained checkpoints used in the paper.
 
+To pre-train ViT-Small (recommended default) with single-node distributed training, run the following on 1 nodes with 8 GPUs
+<pre>
+```bash
+python -m torch.distributed.launch   --nnodes 1 --nproc_per_node 8 main_pretrain.py --data \data_path CoCo or ADE20K\ --batch_size 64 --model gtsa_small
+```
+</pre>
+
+
+
+The following table provides the pre-trained checkpoints used in the paper.
 | Model | Pretraining Data | Pretrain Epochs | Checkpoint | Log |
 |-------|-----------------|----------------|------------|------|
 | GTSA(ours) | COCO train2017 | 100 | [Download](https://drive.google.com/file/d/1Cjwl2dp5wNiUFeyPQAw8K8FtVVXyjDB8/view?usp=sharing) | None |
