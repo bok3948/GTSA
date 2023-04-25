@@ -20,7 +20,7 @@ This is a PyTorch official implementation of the paper [Self-Supervised Learning
 
 </pre>
 
-## Dependencies
+## Requirements
 
 - PyTorch: 1.13.1
 - CUDA: 11.6
@@ -35,7 +35,7 @@ ________________________________________________________________________________
 To pre-train ViT-Small (recommended default) with single-node distributed training, run the following on 1 nodes with 8 GPUs
 
 <pre>
-python -m torch.distributed.launch   --nnodes 1 --nproc_per_node 8 main_pretrain.py --data \data_path CoCo or ADE20K\ --batch_size 64 --model gtsa_small
+python -m torch.distributed.launch   --nnodes 1 --nproc_per_node 8 main_pretrain.py --data /data_path CoCo or ADE20K --batch_size 64 --model gtsa_small
 </pre>
 
 
@@ -45,37 +45,67 @@ The following table provides the pre-trained checkpoints used in the paper.
 |-------|-----------------|----------------|------------|
 | GTSA(ours) | COCO train2017 | 100 | [Download](https://drive.google.com/file/d/12tULRJcqqP4YSLhvW24mwY3i7Eobrqo6/view?usp=sharing) | 
 | GTSA(ours) | ADE20K(2016) train | 100 | [Download](https://drive.google.com/file/d/1C_IVenNM6bh2PxG1M7azbhp5q15GLARc/view?usp=sharing) | 
-| DINO| COCO train2017 | 100 | [Download](https://drive.google.com/file/d/1sHtOCZuI7w18Yp50rLV53zp_gcbab_3T/view?usp=sharing) | None|
+| DINO| COCO train2017 | 100 | [Download](https://drive.google.com/file/d/1sHtOCZuI7w18Yp50rLV53zp_gcbab_3T/view?usp=sharing) |
 | DINO| ADE20K(2016) train | 100 | [Download](https://drive.google.com/file/d/1eFUn8YnP6a_ysyd0K2r8ZJSz_iqH8FXh/view?usp=sharing) | 
 ____________________________________________________________________________________________
 
 ## Fine-tuning with pre-trained checkpoints
 ___________________________________________________________________________________________
-By fine-tuning these pre-trained models, classification tasks
+We evaluated the performance of our models on the iNat19 classification benchmark.
 
+To fine-tuning ViT-Small with iNat19 dataset, first go to dir ./downstream/classification and run the following on 1 nodes with 8 GPUs
+<pre>
+python -m torch.distributed.launch --nproc_per_node=8 --nnodes 1 main_finetune.py --accum_iter 1 --batch_size 128 --model vit_small --finetune /your_checkpoint --epochs 100 --blr 5e-4 --layer_decay 0.65 --weight_decay 0.05 --drop_path 0.1 --mixup 0.8 --cutmix 1.0 --reprob 0.25 --dist_eval
+</pre>
+
+The following table provides the fintuned model weight and log used in the paper.
 | Model | Pretraining Data | Pretrain Epochs | Fintuning Data |  Checkpoint | Log |
 |-------|-----------------|----------------|----------------|------------|------|
-| GTSA(ours) | COCO train2017 | 100 | iNat19 | [Download](https://example.com/checkpoint_1) |
-| DINO| COCO train2017  | 100 | iNat19 |  [Download](https://example.com/checkpoint_2) |
+| GTSA(ours) | COCO train2017 | 100 | iNat19 | [Download](https://example.com/checkpoint_1) | None |
+| DINO| COCO train2017  | 100 | iNat19 |  [Download](https://example.com/checkpoint_2) | None |
 ____________________________________________________________________________________________
 
 ____________________________________________________________________________________________
-By fine-tuning these pre-trained models, Detection & Instace Segmentation tasks
+We evaluated the performance of our models on the COCO 2017 Detection & Instace Segmentation benchmark with mask-rcnn model.
+
+To fine-tuning ViT-Small with COCO dataset, first download mmdetection. and use configs, model of ours(in /dowstream/mmdet). 
+The following code should run mmdetection dir.
+<pre>
+ tools/dist_train.sh /your_path/GTSA/downstream/mmdet/my_configs/GTSA/CoCo_GTSA_mask_rcnn_vit_small_12_p16_1x_coco.py 8 --work-dir ./save
+</pre>
+
 
 | Model | Pretraining Data | Pretrain Epochs | Fintuning Data |  Checkpoint | Log |
 |-------|-----------------|----------------|----------------|------------|------|
-| GTSA(ours) | COCO train2017 | 100 | COCO2017 | [Download](https://example.com/checkpoint_1) |
-| DINO| COCO train2017  | 100 | COCO2017 |  [Download](https://example.com/checkpoint_2) |
+| GTSA(ours) | COCO train2017 | 100 | COCO2017 | [Download](https://example.com/checkpoint_1) | None |
+| DINO| COCO train2017  | 100 | COCO2017 |  [Download](https://example.com/checkpoint_2) | None |
 ____________________________________________________________________________________________
 
 ____________________________________________________________________________________________
 
 By fine-tuning these pre-trained models, Semantic Segmentation tasks
+We evaluated the performance of our models on the ADE20K Semantic Segmentation benchmark with mask-rcnn model.
+
+To fine-tuning ViT-Small with ADE20K dataset, first download mmsegmentation. 
+Second convert checkpoint to mmsegmentation vit style with following code.
+<pre>
+python tools/model_converters/vit2mmseg.py /your_checkpoint ./new_checkpoint_name
+</pre>
+
+Finally, use configs, model of ours(in /dowstream/mmseg). 
+The following code should run mmsegmentation dir.
+
+<pre>
+ tools/dist_train.sh /your_path/GTSA/downstream/mmseg/my_configs/GTSA/ADE20K_GTSA_pretrained_semfpn_vit-s16_512_512_40k_ade20k.py  8 --work-dir ./save --seed 0 --deterministic
+</pre>
+
 
 | Model | Pretraining Data | Pretrain Epochs | Fintuning Data |  Checkpoint | Log |
 |-------|-----------------|----------------|----------------|------------|------|
-| GTSA(ours) | COCO train2017 | 100 | ADE20K | [Download](https://example.com/checkpoint_1) |
-| DINO| COCO train2017  | 100 | ADE20K |  [Download](https://example.com/checkpoint_2) |
+| GTSA(ours) | COCO train2017 | 100 | ADE20K | [Download](https://example.com/checkpoint_1) | None |
+| GTSA(ours) | ADE20K(2016) train | 100 | ADE20K | [Download](https://example.com/checkpoint_1) | None |
+| DINO| COCO train2017  | 100 | ADE20K |  [Download](https://example.com/checkpoint_2) | None |
+| DINO| ADE20K(2016) train  | 100 | ADE20K |  [Download](https://example.com/checkpoint_2) | None |
 ____________________________________________________________________________________________
 
 
