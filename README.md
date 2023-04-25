@@ -41,12 +41,12 @@ python -m torch.distributed.launch   --nnodes 1 --nproc_per_node 8 main_pretrain
 
 
 The following table provides the pre-trained checkpoints used in the paper.
-| Model | Pretraining Data | Pretrain Epochs | Checkpoint | Log |
-|-------|-----------------|----------------|------------|------|
-| GTSA(ours) | COCO train2017 | 100 | [Download](https://drive.google.com/file/d/1Cjwl2dp5wNiUFeyPQAw8K8FtVVXyjDB8/view?usp=sharing) | None |
-| GTSA(ours) | ADE20K train2016 | 100 | [Download](https://drive.google.com/file/d/1Cjwl2dp5wNiUFeyPQAw8K8FtVVXyjDB8/view?usp=sharing) | None |
-| DINO| COCO train2017 | 100 | [Download](https://example.com/checkpoint_2) | None|
-| DINO| ADE20K train2016 | 100 | [Download](https://example.com/checkpoint_2) | None|
+| Model | Pretraining Data | Pretrain Epochs | Checkpoint |
+|-------|-----------------|----------------|------------|
+| GTSA(ours) | COCO train2017 | 100 | [Download](https://drive.google.com/file/d/12tULRJcqqP4YSLhvW24mwY3i7Eobrqo6/view?usp=sharing) | 
+| GTSA(ours) | ADE20K(2016) train | 100 | [Download](https://drive.google.com/file/d/1C_IVenNM6bh2PxG1M7azbhp5q15GLARc/view?usp=sharing) | 
+| DINO| COCO train2017 | 100 | [Download](https://drive.google.com/file/d/1sHtOCZuI7w18Yp50rLV53zp_gcbab_3T/view?usp=sharing) | None|
+| DINO| ADE20K(2016) train | 100 | [Download](https://drive.google.com/file/d/1eFUn8YnP6a_ysyd0K2r8ZJSz_iqH8FXh/view?usp=sharing) | 
 ____________________________________________________________________________________________
 
 ## Fine-tuning with pre-trained checkpoints
