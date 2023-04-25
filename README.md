@@ -34,9 +34,7 @@ ________________________________________________________________________________
 
 To pre-train ViT-Small (recommended default) with single-node distributed training, run the following on 1 nodes with 8 GPUs
 <pre>
-
 python -m torch.distributed.launch   --nnodes 1 --nproc_per_node 8 main_pretrain.py --data \data_path CoCo or ADE20K\ --batch_size 64 --model gtsa_small
-
 </pre>
 
 
