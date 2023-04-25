@@ -68,7 +68,7 @@ ________________________________________________________________________________
 ____________________________________________________________________________________________
 We evaluated the performance of our models on the COCO 2017 Detection & Instace Segmentation benchmark with mask-rcnn model.
 
-To fine-tuning ViT-Small with COCO dataset, first download mmdetection. and use configs, model of ours(in /dowstream/mmdet). 
+To fine-tuning mask-rcnn with COCO dataset, first download mmdetection. and use configs, model of ours(in /dowstream/mmdet). 
 The following code should run mmdetection dir.
 <pre>
  tools/dist_train.sh /your_path/GTSA/downstream/mmdet/my_configs/GTSA/CoCo_GTSA_mask_rcnn_vit_small_12_p16_1x_coco.py 8 --work-dir ./save
@@ -86,7 +86,7 @@ ________________________________________________________________________________
 By fine-tuning these pre-trained models, Semantic Segmentation tasks
 We evaluated the performance of our models on the ADE20K Semantic Segmentation benchmark with mask-rcnn model.
 
-To fine-tuning ViT-Small with ADE20K dataset, first download mmsegmentation. 
+To fine-tuning Semantic FPN with ADE20K dataset, first download mmsegmentation. 
 Second convert checkpoint to mmsegmentation vit style with following code.
 <pre>
 python tools/model_converters/vit2mmseg.py /your_checkpoint ./new_checkpoint_name
