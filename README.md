@@ -74,7 +74,7 @@ The following code should run mmdetection dir.
  tools/dist_train.sh /your_path/GTSA/downstream/mmdet/my_configs/GTSA/CoCo_GTSA_mask_rcnn_vit_small_12_p16_1x_coco.py 8 --work-dir ./save
 </pre>
 
-
+The following table provides the fintuned model weight and log used in the paper.
 | Model | Pretraining Data | Pretrain Epochs | Fintuning Data |  Checkpoint | Log |
 |-------|-----------------|----------------|----------------|------------|------|
 | GTSA(ours) | COCO train2017 | 100 | COCO2017 | [Download](https://example.com/checkpoint_1) | None |
@@ -99,7 +99,7 @@ The following code should run mmsegmentation dir.
  tools/dist_train.sh /your_path/GTSA/downstream/mmseg/my_configs/GTSA/ADE20K_GTSA_pretrained_semfpn_vit-s16_512_512_40k_ade20k.py  8 --work-dir ./save --seed 0 --deterministic
 </pre>
 
-
+The following table provides the fintuned model weight and log used in the paper.
 | Model | Pretraining Data | Pretrain Epochs | Fintuning Data |  Checkpoint | Log |
 |-------|-----------------|----------------|----------------|------------|------|
 | GTSA(ours) | COCO train2017 | 100 | ADE20K | [Download](https://example.com/checkpoint_1) | None |
