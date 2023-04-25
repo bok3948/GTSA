@@ -33,16 +33,20 @@ This is a PyTorch official implementation of the paper [Self-Supervised Learning
 ____________________________________________________________________________________________
 The following table provides the pre-trained checkpoints used in the paper.
 
-| Model | Pretraining Data | Pretrain Epochs | Checkpoint |
-|-------|-----------------|----------------|------------|
-| GTSA(ours) | COCO train2017 | 100 | [Download](https://drive.google.com/file/d/1Cjwl2dp5wNiUFeyPQAw8K8FtVVXyjDB8/view?usp=sharing) |
-| DINO| COCO train2017  | 100 | [Download](https://example.com/checkpoint_2) |
+| Model | Pretraining Data | Pretrain Epochs | Checkpoint | Log |
+|-------|-----------------|----------------|------------|------|
+| GTSA(ours) | COCO train2017 | 100 | [Download](https://drive.google.com/file/d/1Cjwl2dp5wNiUFeyPQAw8K8FtVVXyjDB8/view?usp=sharing) | None |
+| GTSA(ours) | ADE20K train2016 | 100 | [Download](https://drive.google.com/file/d/1Cjwl2dp5wNiUFeyPQAw8K8FtVVXyjDB8/view?usp=sharing) | None |
+| DINO| COCO train2017 | 100 | [Download](https://example.com/checkpoint_2) | None|
+| DINO| ADE20K train2016 | 100 | [Download](https://example.com/checkpoint_2) | None|
 ____________________________________________________________________________________________
-____________________________________________________________________________________________
+
+## Fine-tuning with pre-trained checkpoints
+___________________________________________________________________________________________
 By fine-tuning these pre-trained models, classification tasks
 
-| Model | Pretraining Data | Pretrain Epochs | Fintuning Data |  Checkpoint |
-|-------|-----------------|----------------|----------------|------------|
+| Model | Pretraining Data | Pretrain Epochs | Fintuning Data |  Checkpoint | Log |
+|-------|-----------------|----------------|----------------|------------|------|
 | GTSA(ours) | COCO train2017 | 100 | iNat19 | [Download](https://example.com/checkpoint_1) |
 | DINO| COCO train2017  | 100 | iNat19 |  [Download](https://example.com/checkpoint_2) |
 ____________________________________________________________________________________________
@@ -50,8 +54,8 @@ ________________________________________________________________________________
 ____________________________________________________________________________________________
 By fine-tuning these pre-trained models, Detection & Instace Segmentation tasks
 
-| Model | Pretraining Data | Pretrain Epochs | Fintuning Data |  Checkpoint |
-|-------|-----------------|----------------|----------------|------------|
+| Model | Pretraining Data | Pretrain Epochs | Fintuning Data |  Checkpoint | Log |
+|-------|-----------------|----------------|----------------|------------|------|
 | GTSA(ours) | COCO train2017 | 100 | COCO2017 | [Download](https://example.com/checkpoint_1) |
 | DINO| COCO train2017  | 100 | COCO2017 |  [Download](https://example.com/checkpoint_2) |
 ____________________________________________________________________________________________
@@ -60,8 +64,8 @@ ________________________________________________________________________________
 
 By fine-tuning these pre-trained models, Semantic Segmentation tasks
 
-| Model | Pretraining Data | Pretrain Epochs | Fintuning Data |  Checkpoint |
-|-------|-----------------|----------------|----------------|------------|
+| Model | Pretraining Data | Pretrain Epochs | Fintuning Data |  Checkpoint | Log |
+|-------|-----------------|----------------|----------------|------------|------|
 | GTSA(ours) | COCO train2017 | 100 | ADE20K | [Download](https://example.com/checkpoint_1) |
 | DINO| COCO train2017  | 100 | ADE20K |  [Download](https://example.com/checkpoint_2) |
 ____________________________________________________________________________________________
