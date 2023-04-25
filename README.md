@@ -92,7 +92,7 @@ Second convert checkpoint to mmsegmentation vit style with following code.
 python tools/model_converters/vit2mmseg.py /your_checkpoint ./new_checkpoint_name
 </pre>
 
-Finally, use configs, model of ours(in /dowstream/mmseg). 
+Finally, use configs of ours(in /dowstream/mmseg). 
 The following code should run mmsegmentation dir.
 
 <pre>
