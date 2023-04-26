@@ -51,7 +51,7 @@ ________________________________________________________________________________
 
 ## Fine-tuning with pre-trained checkpoints
 ___________________________________________________________________________________________
-We evaluated the performance of our models on the iNat19 classification benchmark.
+We evaluated the performance of our models on the iNaturalists 2019 classification benchmark.
 
 To fine-tuning ViT-Small with iNat19 dataset, first go to dir ./downstream/classification and run the following on 1 nodes with 8 GPUs
 <pre>
