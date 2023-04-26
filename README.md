@@ -49,6 +49,7 @@ The following table provides the pre-trained checkpoints used in the paper.
 | DINO| ADE20K(2016) train | 100 | [Download](https://drive.google.com/file/d/1eFUn8YnP6a_ysyd0K2r8ZJSz_iqH8FXh/view?usp=sharing) | 
 ____________________________________________________________________________________________
 
+
 ## Fine-tuning with pre-trained checkpoints
 ___________________________________________________________________________________________
 1.Classification
@@ -67,6 +68,7 @@ The following table provides the fintuned model weight and log used in the paper
 | DINO| COCO train2017  | 100 | iNaturalists 2019 |  [Download](https://example.com/checkpoint_2) |
 ____________________________________________________________________________________________
 
+
 ____________________________________________________________________________________________
 2.Detection & Instace Segmentation
 
@@ -84,6 +86,7 @@ The following table provides the fintuned model weight and log used in the paper
 | GTSA(ours) | COCO train2017 | 100 | COCO2017 | [Download](https://example.com/checkpoint_1) |
 | DINO| COCO train2017  | 100 | COCO2017 |  [Download](https://drive.google.com/file/d/1C4Et6d_qYZAEWnPIQ7B2TySY-FJvPYMP/view?usp=sharing) |
 ____________________________________________________________________________________________
+
 
 ____________________________________________________________________________________________
 3.Semantic Segmentation
