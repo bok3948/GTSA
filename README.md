@@ -84,7 +84,7 @@ ________________________________________________________________________________
 ____________________________________________________________________________________________
 
 By fine-tuning these pre-trained models, Semantic Segmentation tasks
-We evaluated the performance of our models on the ADE20K Semantic Segmentation benchmark with mask-rcnn model.
+We evaluated the performance of our models on the ADE20K Semantic Segmentation benchmark.
 
 To fine-tuning Semantic FPN with ADE20K dataset, first download mmsegmentation. 
 Second convert checkpoint to mmsegmentation vit style with following code.
