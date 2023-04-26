@@ -83,7 +83,7 @@ ________________________________________________________________________________
 
 ____________________________________________________________________________________________
 
-By fine-tuning these pre-trained models, Semantic Segmentation tasks
+
 We evaluated the performance of our models on the ADE20K Semantic Segmentation benchmark.
 
 To fine-tuning Semantic FPN with ADE20K dataset, first download mmsegmentation. 
