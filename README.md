@@ -59,10 +59,10 @@ python -m torch.distributed.launch --nproc_per_node=8 --nnodes 1 main_finetune.p
 </pre>
 
 The following table provides the fintuned model weight and log used in the paper.
-| Model | Pretraining Data | Pretrain Epochs | Fintuning Data |  Checkpoint | Log |
-|-------|-----------------|----------------|----------------|------------|------|
-| GTSA(ours) | COCO train2017 | 100 | iNat19 | [Download](https://example.com/checkpoint_1) | None |
-| DINO| COCO train2017  | 100 | iNat19 |  [Download](https://example.com/checkpoint_2) | None |
+| Model | Pretraining Data | Pretrain Epochs | Fintuning Data | Log |
+|-------|-----------------|----------------|----------------|------|
+| GTSA(ours) | COCO train2017 | 100 | iNat19 | [Download](https://example.com/checkpoint_1) |
+| DINO| COCO train2017  | 100 | iNat19 |  [Download](https://example.com/checkpoint_2) |
 ____________________________________________________________________________________________
 
 ____________________________________________________________________________________________
@@ -75,10 +75,10 @@ The following code should run mmdetection dir.
 </pre>
 
 The following table provides the fintuned model weight and log used in the paper.
-| Model | Pretraining Data | Pretrain Epochs | Fintuning Data |  Checkpoint | Log |
-|-------|-----------------|----------------|----------------|------------|------|
-| GTSA(ours) | COCO train2017 | 100 | COCO2017 | [Download](https://example.com/checkpoint_1) | None |
-| DINO| COCO train2017  | 100 | COCO2017 |  [Download](https://example.com/checkpoint_2) | None |
+| Model | Pretraining Data | Pretrain Epochs | Fintuning Data | Log |
+|-------|-----------------|----------------|----------------|------|
+| GTSA(ours) | COCO train2017 | 100 | COCO2017 | [Download](https://example.com/checkpoint_1) |
+| DINO| COCO train2017  | 100 | COCO2017 |  [Download](https://drive.google.com/file/d/1C4Et6d_qYZAEWnPIQ7B2TySY-FJvPYMP/view?usp=sharing) |
 ____________________________________________________________________________________________
 
 ____________________________________________________________________________________________
@@ -100,12 +100,12 @@ The following code should run mmsegmentation dir.
 </pre>
 
 The following table provides the fintuned model weight and log used in the paper.
-| Model | Pretraining Data | Pretrain Epochs | Fintuning Data |  Checkpoint | Log |
-|-------|-----------------|----------------|----------------|------------|------|
-| GTSA(ours) | COCO train2017 | 100 | ADE20K | [Download](https://example.com/checkpoint_1) | None |
-| GTSA(ours) | ADE20K(2016) train | 100 | ADE20K | [Download](https://example.com/checkpoint_1) | None |
-| DINO| COCO train2017  | 100 | ADE20K |  [Download](https://example.com/checkpoint_2) | None |
-| DINO| ADE20K(2016) train  | 100 | ADE20K |  [Download](https://example.com/checkpoint_2) | None |
+| Model | Pretraining Data | Pretrain Epochs | Fintuning Data | Log |
+|-------|-----------------|----------------|----------------|------|
+| GTSA(ours) | COCO train2017 | 100 | ADE20K | [Download](https://drive.google.com/file/d/1dkl-Ne4YmZAPLbd_NdowCqywWRGu2rNb/view?usp=sharing) | 
+| GTSA(ours) | ADE20K(2016) train | 100 | ADE20K | [Download](https://drive.google.com/file/d/1UNOxRCwPzvCZck8GhNZfM2oaPFsDWKvM/view?usp=sharing) | 
+| DINO| COCO train2017  | 100 | ADE20K |  [Download](https://drive.google.com/file/d/18112Q0ZnpHJ5aV1KduW32O7d4AUN2Zyo/view?usp=sharing) |
+| DINO| ADE20K(2016) train  | 100 | ADE20K |  [Download](https://drive.google.com/file/d/1mLJYsQENHo4C7bmhuhrT6OPEVyyLnkw-/view?usp=sharing) |
 ____________________________________________________________________________________________
 
 
