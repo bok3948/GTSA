@@ -83,7 +83,7 @@ The following code should run mmdetection dir.
 The following table provides the fintuned model weight and log used in the paper.
 | Model | Pretraining Data | Pretrain Epochs | Fintuning Data | Log |
 |-------|-----------------|----------------|----------------|------|
-| GTSA(ours) | COCO train2017 | 100 | COCO2017 | [Download](https://drive.google.com/file/d/1B8zUh4mk6Kj3xX-4vp0lwZtQzyY5HEBg/view?usp=sharing) |
+| GTSA(ours) | COCO train2017 | 100 | COCO2017 | [Download](https://drive.google.com/file/d/1Su9mX1HWBcUerN--IdSk3em6LaqBfDsg/view?usp=sharing) |
 | DINO| COCO train2017  | 100 | COCO2017 |  [Download](https://drive.google.com/file/d/1C4Et6d_qYZAEWnPIQ7B2TySY-FJvPYMP/view?usp=sharing) |
 ____________________________________________________________________________________________
 
