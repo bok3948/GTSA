@@ -61,8 +61,8 @@ python -m torch.distributed.launch --nproc_per_node=8 --nnodes 1 main_finetune.p
 The following table provides the fintuned model weight and log used in the paper.
 | Model | Pretraining Data | Pretrain Epochs | Fintuning Data | Log |
 |-------|-----------------|----------------|----------------|------|
-| GTSA(ours) | COCO train2017 | 100 | iNat19 | [Download](https://example.com/checkpoint_1) |
-| DINO| COCO train2017  | 100 | iNat19 |  [Download](https://example.com/checkpoint_2) |
+| GTSA(ours) | COCO train2017 | 100 | iNaturalists 2019 | [Download](https://example.com/checkpoint_1) |
+| DINO| COCO train2017  | 100 | iNaturalists 2019 |  [Download](https://example.com/checkpoint_2) |
 ____________________________________________________________________________________________
 
 ____________________________________________________________________________________________
