@@ -51,6 +51,7 @@ ________________________________________________________________________________
 
 ## Fine-tuning with pre-trained checkpoints
 ___________________________________________________________________________________________
+1.Classification.
 We evaluated the performance of our models on the iNaturalists 2019 classification benchmark.
 
 To fine-tuning ViT-Small with iNat19 dataset, first go to dir ./downstream/classification and run the following on 1 nodes with 8 GPUs
@@ -66,6 +67,7 @@ The following table provides the fintuned model weight and log used in the paper
 ____________________________________________________________________________________________
 
 ____________________________________________________________________________________________
+2.Detection & Instace Segmentation
 We evaluated the performance of our models on the COCO 2017 Detection & Instace Segmentation benchmark with mask-rcnn model.
 
 To fine-tuning mask-rcnn with COCO dataset, first download mmdetection. and use configs, model of ours(in /dowstream/mmdet). 
@@ -82,7 +84,7 @@ The following table provides the fintuned model weight and log used in the paper
 ____________________________________________________________________________________________
 
 ____________________________________________________________________________________________
-
+3.Semantic Segmentation
 
 We evaluated the performance of our models on the ADE20K Semantic Segmentation benchmark.
 
