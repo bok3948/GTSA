@@ -71,7 +71,7 @@ We evaluated the performance of our models on the COCO 2017 Detection & Instace 
 To fine-tuning mask-rcnn with COCO dataset, first download mmdetection. and use configs, model of ours(in /dowstream/mmdet). 
 The following code should run mmdetection dir.
 <pre>
- tools/dist_train.sh /your_path/GTSA/downstream/mmdet/my_configs/GTSA/CoCo_GTSA_mask_rcnn_vit_small_12_p16_1x_coco.py 8 --work-dir ./save
+ tools/dist_train.sh /your_path/GTSA/downstream/mmdet/my_configs/CoCo_GTSA_mask_rcnn_vit_small_12_p16_1x_coco.py 8 --work-dir ./save
 </pre>
 
 The following table provides the fintuned model weight and log used in the paper.
@@ -96,7 +96,7 @@ Finally, use configs of ours(in /dowstream/mmseg).
 The following code should run mmsegmentation dir.
 
 <pre>
- tools/dist_train.sh /your_path/GTSA/downstream/mmseg/my_configs/GTSA/ADE20K_GTSA_pretrained_semfpn_vit-s16_512_512_40k_ade20k.py  8 --work-dir ./save --seed 0 --deterministic
+ tools/dist_train.sh /your_path/GTSA/downstream/mmseg/my_configs/ADE20K_GTSA_pretrained_semfpn_vit-s16_512_512_40k_ade20k.py  8 --work-dir ./save --seed 0 --deterministic
 </pre>
 
 The following table provides the fintuned model weight and log used in the paper.
