@@ -63,7 +63,7 @@ To fine-tuning ViT-Small with iNat19 dataset, first go to dir ./downstream/class
 python -m torch.distributed.launch --nproc_per_node=8 --nnodes 1 main_finetune.py --accum_iter 1 --batch_size 128 --model vit_small --finetune /your_checkpoint --epochs 300 --blr 5e-4 --layer_decay 0.65 --weight_decay 0.05 --drop_path 0.1 --mixup 0.8 --cutmix 1.0 --reprob 0.25 --dist_eval
 </pre>
 
-The following table provides the fintuned model weight and log used in the paper.
+The following table provides the finetuning log.
 | Model | Pretraining Data | Pretrain Epochs | Fintuning Data | Log |
 |-------|-----------------|----------------|----------------|------|
 | GTSA(ours) | COCO train2017 | 100 | iNaturalists 2019 | [Download](https://example.com/checkpoint_1) |
@@ -82,7 +82,7 @@ The following code should run mmdetection dir.
  tools/dist_train.sh /your_path/GTSA/downstream/mmdet/my_configs/CoCo_GTSA_mask_rcnn_vit_small_12_p16_1x_coco.py 8 --work-dir ./save
 </pre>
 
-The following table provides the fintuned model weight and log used in the paper.
+The following table provides the finetuning log.
 | Model | Pretraining Data | Pretrain Epochs | Fintuning Data | Log |
 |-------|-----------------|----------------|----------------|------|
 | GTSA(ours) | COCO train2017 | 100 | COCO2017 | [Download](https://drive.google.com/file/d/1Su9mX1HWBcUerN--IdSk3em6LaqBfDsg/view?usp=sharing) |
@@ -108,7 +108,7 @@ The following code should run mmsegmentation dir.
  tools/dist_train.sh /your_path/GTSA/downstream/mmseg/my_configs/ADE20K_GTSA_pretrained_semfpn_vit-s16_512_512_40k_ade20k.py  8 --work-dir ./save --seed 0 --deterministic
 </pre>
 
-The following table provides the fintuned model weight and log used in the paper.
+The following table provides the finetuning log.
 | Model | Pretraining Data | Pretrain Epochs | Fintuning Data | Log |
 |-------|-----------------|----------------|----------------|------|
 | GTSA(ours) | COCO train2017 | 100 | ADE20K | [Download](https://drive.google.com/file/d/1dkl-Ne4YmZAPLbd_NdowCqywWRGu2rNb/view?usp=sharing) | 
