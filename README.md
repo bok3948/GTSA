@@ -58,7 +58,7 @@ We evaluated the performance of our models on the iNaturalists 2019 classificati
 
 To fine-tuning ViT-Small with iNat19 dataset, first go to dir ./downstream/classification and run the following on 1 nodes with 8 GPUs
 <pre>
-python -m torch.distributed.launch --nproc_per_node=8 --nnodes 1 main_finetune.py --accum_iter 1 --batch_size 128 --model vit_small --finetune /your_checkpoint --epochs 100 --blr 5e-4 --layer_decay 0.65 --weight_decay 0.05 --drop_path 0.1 --mixup 0.8 --cutmix 1.0 --reprob 0.25 --dist_eval
+python -m torch.distributed.launch --nproc_per_node=8 --nnodes 1 main_finetune.py --accum_iter 1 --batch_size 128 --model vit_small --finetune /your_checkpoint --epochs 300 --blr 5e-4 --layer_decay 0.65 --weight_decay 0.05 --drop_path 0.1 --mixup 0.8 --cutmix 1.0 --reprob 0.25 --dist_eval
 </pre>
 
 The following table provides the fintuned model weight and log used in the paper.
