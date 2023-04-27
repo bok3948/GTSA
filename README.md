@@ -6,7 +6,7 @@ This is a PyTorch official implementation of the paper [Self-Supervised Learning
 ![Example Image](/images/GTSA_fix.png "Example Image Titl")
 
 
-
+<!--
 <pre>
 
 @misc{lee2023selfsupervised,
@@ -20,6 +20,7 @@ This is a PyTorch official implementation of the paper [Self-Supervised Learning
 #Jong-Min Lee
 
 </pre>
+-->
 
 ## Requirements
 
