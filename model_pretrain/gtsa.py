@@ -564,7 +564,7 @@ class GTSA(nn.Module):
         return filtered_input_maps, filtered_candidate_maps
 
     def neirest_neighbores_on_l2(self, input_maps, candidate_maps, num_matches):
-        distances = torch.cdist(input_maps, candidate_maps)
+        #distances = torch.cdist(input_maps, candidate_maps)
 
         # 각 Tensor를 정규화합니다.
         input_maps_normalized = F.normalize(input_maps, p=2, dim=-1)
