@@ -66,8 +66,8 @@ python -m torch.distributed.launch --nproc_per_node=8 --nnodes 1 main_finetune.p
 The following table provides the finetuning log.
 | Model | Pretraining Data | Pretrain Epochs | Fintuning Data | Log |
 |-------|-----------------|----------------|----------------|------|
-| GTSA(ours) | COCO train2017 | 100 | iNaturalists 2019 | [Download](https://example.com/checkpoint_1) |
-| DINO| COCO train2017  | 100 | iNaturalists 2019 |  [Download](https://example.com/checkpoint_2) |
+| GTSA(ours) | COCO train2017 | 100 | iNaturalists 2019 | [Download](https://drive.google.com/file/d/1GTvKt9aRegsNKo6WpYaw7L7NJwvX-vwY/view?usp=sharing) |
+| DINO| COCO train2017  | 100 | iNaturalists 2019 |  [Download](https://drive.google.com/file/d/1eYpqMvAg8cvH_guokFRoiFF7XxeZ3t4y/view?usp=sharing) |
 ____________________________________________________________________________________________
 
 
