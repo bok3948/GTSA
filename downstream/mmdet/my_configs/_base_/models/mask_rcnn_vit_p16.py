@@ -1,6 +1,4 @@
-# Copyright (c) 2015-present, Facebook, Inc.
-# All rights reserved.
-# model settings
+
 model = dict(
     type='MaskRCNN',
     pretrained=None,
