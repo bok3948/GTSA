@@ -99,7 +99,6 @@ The results should be
 | Method      | Detection              |         |         | Instance Segmentation  |         |         |
 |-------------|------------------------|---------|---------|------------------------|---------|---------|
 |             | AP<sup>b</sup>         | AP<sup>b</sup><sub>50</sub> | AP<sup>b</sup><sub>75</sub> | AP<sup>m</sup>         | AP<sup>m</sup><sub>50</sub> | AP<sup>m</sup><sub>75</sub> |
-|-------------|------------------------|---------|---------|------------------------|---------|---------|
 | DINO        | 32.4                   | 54.2    | 33.8    | 30.8                   | 51.1    | 32.2    |
 | GTSA(ours)  | **35.8**               | **57.8**| **38.5**| **33.5**               | **54.7**| **35.3**|
 
@@ -131,13 +130,15 @@ The following table provides the finetuning log.
 | GTSA(ours) | ADE20K(2016) train | 100 | ADE20K | [Download](https://drive.google.com/file/d/1UNOxRCwPzvCZck8GhNZfM2oaPFsDWKvM/view?usp=sharing) | 
 | DINO| COCO train2017  | 100 | ADE20K |  [Download](https://drive.google.com/file/d/18112Q0ZnpHJ5aV1KduW32O7d4AUN2Zyo/view?usp=sharing) |
 | DINO| ADE20K(2016) train  | 100 | ADE20K |  [Download](https://drive.google.com/file/d/1mLJYsQENHo4C7bmhuhrT6OPEVyyLnkw-/view?usp=sharing) |
-____________________________________________________________________________________________
 
 The results should be 
 | Method      | aAcc | mIoU | mAcc |
 |-------------|------|------|------|
 | DINO        | 65.5 | 13.6 | 18.8 |
 | GTSA (Ours) | **67.0** | **16.2** | **22.4** |
+
+____________________________________________________________________________________________
+
 
 
 
