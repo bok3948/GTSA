@@ -133,6 +133,11 @@ The following table provides the finetuning log.
 | DINO| ADE20K(2016) train  | 100 | ADE20K |  [Download](https://drive.google.com/file/d/1mLJYsQENHo4C7bmhuhrT6OPEVyyLnkw-/view?usp=sharing) |
 ____________________________________________________________________________________________
 
-##Results
+The results should be 
+| Method      | aAcc | mIoU | mAcc |
+|-------------|------|------|------|
+| DINO        | 65.5 | 13.6 | 18.8 |
+| GTSA (Ours) | **67.0** | **16.2** | **22.4** |
+
 
 
