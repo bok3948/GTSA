@@ -4,13 +4,7 @@
 Hyperparameters modifed from
 https://github.com/SwinTransformer/Swin-Transformer-Object-Detection
 """
-"""
-_base_ = [
-    '/home/ubuntu/GTE_SSL/downstream/mmdet/my_configs/_base_/models/mask_rcnn_vit_p16.py',
-    '/home/ubuntu/mmdetection/configs/_base_/datasets/coco_instance.py',
-    '/home/ubuntu/mmdetection/configs/_base_/schedules/schedule_1x.py', '/home/ubuntu/mmdetection/configs/_base_/default_runtime.py'
-]
-"""
+
 _base_ = [
     '/workspace/GTSA_exps/downstream/mmdet/my_configs/_base_/models/mask_rcnn_vit_p16.py',
     '/workspace/mmdetection/configs/_base_/datasets/coco_instance.py',
