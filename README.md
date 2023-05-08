@@ -68,6 +68,13 @@ The following table provides the finetuning log.
 |-------|-----------------|----------------|----------------|------|
 | GTSA(ours) | COCO train2017 | 100 | iNaturalists 2019 | [Download](https://drive.google.com/file/d/1GTvKt9aRegsNKo6WpYaw7L7NJwvX-vwY/view?usp=sharing) |
 | DINO| COCO train2017  | 100 | iNaturalists 2019 |  [Download](https://drive.google.com/file/d/1eYpqMvAg8cvH_guokFRoiFF7XxeZ3t4y/view?usp=sharing) |
+
+The results should be 
+| Method      | Top-1 Acc | Top-5 Acc |
+|-------------|-----------|-----------|
+| DINO        | 54.8      | 82.9      |
+| GTSA (Ours) | **59.7**  | **85.7**  |
+
 ____________________________________________________________________________________________
 
 
@@ -87,6 +94,15 @@ The following table provides the finetuning log.
 |-------|-----------------|----------------|----------------|------|
 | GTSA(ours) | COCO train2017 | 100 | COCO2017 | [Download](https://drive.google.com/file/d/1Su9mX1HWBcUerN--IdSk3em6LaqBfDsg/view?usp=sharing) |
 | DINO| COCO train2017  | 100 | COCO2017 |  [Download](https://drive.google.com/file/d/1C4Et6d_qYZAEWnPIQ7B2TySY-FJvPYMP/view?usp=sharing) |
+
+The results should be 
+| Method      | Detection              |         |         | Instance Segmentation  |         |         |
+|-------------|------------------------|---------|---------|------------------------|---------|---------|
+|             | AP<sup>b</sup>         | AP<sup>b</sup><sub>50</sub> | AP<sup>b</sup><sub>75</sub> | AP<sup>m</sup>         | AP<sup>m</sup><sub>50</sub> | AP<sup>m</sup><sub>75</sub> |
+|-------------|------------------------|---------|---------|------------------------|---------|---------|
+| DINO        | 32.4                   | 54.2    | 33.8    | 30.8                   | 51.1    | 32.2    |
+| GTSA(ours)  | **35.8**               | **57.8**| **38.5**| **33.5**               | **54.7**| **35.3**|
+
 ____________________________________________________________________________________________
 
 
@@ -117,6 +133,6 @@ The following table provides the finetuning log.
 | DINO| ADE20K(2016) train  | 100 | ADE20K |  [Download](https://drive.google.com/file/d/1mLJYsQENHo4C7bmhuhrT6OPEVyyLnkw-/view?usp=sharing) |
 ____________________________________________________________________________________________
 
-
+##Results
 
 
