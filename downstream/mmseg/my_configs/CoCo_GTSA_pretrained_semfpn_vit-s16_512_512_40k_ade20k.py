@@ -1,10 +1,4 @@
-"""
-_base_ = [
-    "/nasdata3/9kth/03_03/mmsegmentation/configs/_base_/datasets/ade20k.py",
-    "/nasdata3/9kth/03_03/mmsegmentation/configs/_base_/default_runtime.py",
-    "/nasdata3/9kth/03_03/mmsegmentation/configs/_base_/schedules/schedule_40k.py",
-]
-"""
+
 _base_ = [
     "/workspace/mmsegmentation/configs/_base_/datasets/ade20k.py",
     "/workspace/mmsegmentation/configs/_base_/default_runtime.py",
