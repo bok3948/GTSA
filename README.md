@@ -127,7 +127,7 @@ The following table provides the finetuning log.
 | Model | Pretraining Data | Pretrain Epochs | Fintuning Data | Log |
 |-------|-----------------|----------------|----------------|------|
 | GTSA(ours) | COCO train2017 | 100 | ADE20K | [Download](https://drive.google.com/file/d/1dkl-Ne4YmZAPLbd_NdowCqywWRGu2rNb/view?usp=sharing) | 
-| GTSA(ours) | ADE20K(2016) train | 100 | ADE20K | [Download](https://drive.google.com/file/d/1UNOxRCwPzvCZck8GhNZfM2oaPFsDWKvM/view?usp=sharing) | 
+| GTSA(ours) | ADE20K(2016) train | 100 | ADE20K | [Download](https://drive.google.com/file/d/10k54Ys2HTkfF3IWJvfme94yRHFugvL4m/view?usp=sharing) | 
 | DINO| COCO train2017  | 100 | ADE20K |  [Download](https://drive.google.com/file/d/18112Q0ZnpHJ5aV1KduW32O7d4AUN2Zyo/view?usp=sharing) |
 | DINO| ADE20K(2016) train  | 100 | ADE20K |  [Download](https://drive.google.com/file/d/1mLJYsQENHo4C7bmhuhrT6OPEVyyLnkw-/view?usp=sharing) |
 
